@@ -2,6 +2,4 @@ from django.urls import path
 
 from catalog import views
 
-urlpatterns = [
-    path('', views.about)
-]
+urlpatterns = [path("about/", views.about)]
