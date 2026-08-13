@@ -22,3 +22,6 @@ uv run django-admin --version
 - `settings.py` contains all the settings for the project, including DB setup, apps, templates, middlewares and so on.
 - `urls.py` is like a router for the app
 - `wsgi.py` and `asgi.py` are "servers", the second one is async
+
+## Apps
+- `catalog/` – catalog app. Differs fron `config/` in a way that that one is a configuration for the project, and `catalog/` contains actual app logic for the catalog.
