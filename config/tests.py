@@ -11,5 +11,5 @@ class HealthCheckTests(SimpleTestCase):
 
 class NotFoundTests(SimpleTestCase):
     def test_404_for_unknown(self):
-        response = self.client.get("unknown_route")
+        response = self.client.get("/unknown_route/")
         self.assertEqual(response.status_code, 404)
